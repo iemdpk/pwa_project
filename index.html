@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My First PWA</title>
+    <title>Ankr .us</title>
     <meta name="theme-color" content="#ff0000"/>
     <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script>
         //if browser support service worker
         if('serviceWorker' in navigator) {
           navigator.serviceWorker.register('sw.js');
         };
       </script>
+
+  <style>
+    body{
+      font-family: 'Signika', sans-serif;
+    }
+  </style>
+
 </head>
 <body>
-    <h1>PWA</h1>
-    <p>Hello world!</p>
+    <div style="display: flex;height: 100vh;width: 200vh;justify-content: center;align-items: center;">
+      <h1>You can Install the application two Please wait 5 seconds</h1>
+    </div>
+    <script>
+      setTimeout(()=>{
+
+        $(document).ready(function(){
+        window.location.href = "https://my.ankr.us";
+      });
+
+      },5000);
+      
+    </script>
 </body>
 </html>
